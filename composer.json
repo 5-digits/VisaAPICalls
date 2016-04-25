@@ -1,0 +1,12 @@
+{
+    "name": "visa/payments",
+    "type": "library",
+    "license": "proprietary",
+    "description": "visa cart payments system",
+    "require": {
+        "php": ">=5.3.9"
+    },
+    "autoload": {
+        "psr-4": {"VisaCyberSourcePayments\\": "./src/"}
+    }
+}
