@@ -1,7 +1,7 @@
 # VisaAPICalls
 
 h2. Install
-
+-----------------
 include './vendor/autoload.php';
 
 $apiKey = '*******';

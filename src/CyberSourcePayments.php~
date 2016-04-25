@@ -55,3 +55,43 @@ Class CyberSourcePayments {
     }
 
 }
+
+/*
+ * 
+ * 
+ * 
+ * error_reporting(E_ALL); ini_set("display_errors", 1);
+
+$apiKey = 'D2LNCINSL87GJO1E441C212KyN5YYLkiTIrMqqVBVN-uaCWjU';
+$secret = '5K2v2$H@}d4EQpGEVssM-FpLT9UGoh8Y#b1xlhOp';
+$body = json_encode([
+    'amount' => '10',
+    'currency' => 'USD',
+    'payment' => [
+        'cardNumber' => '378282246310005',
+        'cardExpirationMonth' => '10',
+        'cardExpirationYear' => '2016',
+    ]
+        ]);
+
+include './vendor/autoload.php';
+ * 
+ * 
+$apiKey = 'D2LNCINSL87GJO1E441C212KyN5YYLkiTIrMqqVBVN-uaCWjU';
+$secret = '5K2v2$H@}d4EQpGEVssM-FpLT9UGoh8Y#b1xlhOp';
+$body = json_encode([
+    'amount' => '10',
+    'currency' => 'USD',
+    'payment' => [
+        'cardNumber' => '378282246310005',
+        'cardExpirationMonth' => '10',
+        'cardExpirationYear' => '2016',
+    ]
+        ]);
+
+
+$CyberSourcePayments = new \VisaCyberSourcePayments\CyberSourcePayments($apiKey, $secret, $body);
+$json = $CyberSourcePayments->payments();
+print_r($json);
+ * 
+ */
