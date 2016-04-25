@@ -1,7 +1,8 @@
 # VisaAPICalls
-
-h2. Install
-
+First of visa developer obtain a user
+https://developer.visa.com
+# Install
+```sh
 include './vendor/autoload.php';
 
 $apiKey = '*******';
@@ -15,6 +16,9 @@ $body = json_encode([
         'cardExpirationYear' => '2016',
     ]
         ]);
-
 $CyberSourcePayments = new \VisaCyberSourcePayments\CyberSourcePayments($apiKey, $secret, $body);
 $json = $CyberSourcePayments->payments();
+```
+
+
+
